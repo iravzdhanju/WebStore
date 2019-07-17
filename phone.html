@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/18ad7e4eb5.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script>
+    <link rel="stylesheet" href="./css/phone.css">
+    <link rel="stylesheet" href="./css/carts.css">
+</head>
+
+<body>
+    <div class="container-body-all">
+        <div class="overlay"></div>
+        <div class="navsbar">
+            <a href="#default" class="logo"><img src="./image/R-1 - Copy1.png" class="loges"></a>
+            <a href="./index.html">Home</a>
+            <a href="#news">News</a>
+            <a href="./about-us.html">About Us</a>
+
+            <div class="right">
+
+
+                <a href="#" onclick="opencart()"><i class="fab fa-opencart"></i> View Cart</a>
+                <a href="#" onclick="openForm()">Login</a>
+            </div>
+
+            <!-- <div class="drop-down">
+          
+          <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-contents">
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Electronics</a>
+          </div> -->
+
+            <!-- </div> -->
+            <div class="search-containers">
+                <form>
+                    <input type="text" placeholder="Search.." class="searc">
+                    <button type="button" class="searchBtn" onclick="search()"> <i class="fa fa-search"></i></button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products -->
+    <section class="featured-deals">
+        <div class="container">
+            <div class="title">
+                <h2>Mobiles</h2>
+            </div>
+            <!-- 1st -->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="./image/row1m.jpeg" class="imago">
+
+
+
+                        <div class="overlay-right">
+                            <input type="button" class="addtocart" value="ADD TO CART" title="For the cart">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Realme</h3>
+                        <h2>$250.00/-</h2>
+                    </div>
+
+                </div>
+
+                <!-- 2nd -->
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="./image/rowp3.jpeg" class="imago">
+
+
+
+                        <div class="overlay-right">
+                            <input type="button" class="addtocart" value="ADD TO CART" title="For the cart">
+
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Realme New</h3>
+                        <h2>$410.00/-</h2>
+                    </div>
+
+                </div>
+
+                <!-- 3rdd -->
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="./image/row2m.jpeg" class="imago">
+
+
+
+                        <div class="overlay-right">
+                            <input type="button" class="addtocart" value="ADD TO CART" title="For the cart">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Samsung</h3>
+                        <h2>$820.00/-</h2>
+
+
+                    </div>
+
+
+                </div>
+                <!-- 4rth -->
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="./image/phone.jpeg" class="imago">
+
+
+
+                        <div class="overlay-right">
+                            <input type="button" class="addtocart" value="ADD TO CART" title="For the cart">
+
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Google Pixel</h3>
+                        <h2>$550.00/-</h2>
+                    </div>
+
+                </div>
+            </div>
+            <!-- ROW 2 -->
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="./image/mobn1.jpeg" class="imago">
+
+
+
+                        <div class="overlay-right">
+                            <input type="button" class="addtocart" value="ADD TO CART" title="For the cart">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Vivo</h3>
+                        <h2>$370.00/-</h2>
+                    </div>
+
+                </div>
+
+                <!-- 2nd -->
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="./image/mobn2.jpeg" class="imago">
+
+
+
+                        <div class="overlay-right">
+                            <input type="button" class="addtocart" value="ADD TO CART" title="For the cart">
+
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>Xr</h3>
+                        <h2>$500.00/-</h2>
+                    </div>
+
+                </div>
+
+                <!-- 3rdd -->
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="./image/mobn3.jpeg" class="imago">
+
+
+
+                        <div class="overlay-right">
+                            <input type="button" class="addtocart" value="ADD TO CART" title="For the cart">
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>IPhone 7</h3>
+                        <h2>$910.00/-</h2>
+
+
+                    </div>
+
+
+                </div>
+                <!-- 4rth -->
+                <div class="col-md-3">
+                    <div class="product-top">
+                        <img src="./image/mobn4.jpeg" class="imago">
+
+
+
+                        <div class="overlay-right">
+                            <input type="button" class="addtocart" value="ADD TO CART" title="For the cart">
+
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="product-bottom text-center">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <h3>IPhone 6s</h3>
+                        <h2>$514.00/-</h2>
+                    </div>
+
+                </div>
+            </div>
+    </section>
+    <!-- ROW 3 -->
+
+
+    <!-- WRapper 
+                <div class="WRapper">
+                    <ul type="none" class="grid">
+                        <li><img src="../image/row2sh.jpeg" alt=""></li>
+                        <li><img src="../image/rowp1.jpeg" alt=""></li>
+                        <li><img src="https://m.media-amazon.com/images/I/81Nt7iGIqPL._AC_UL320_.jpg" alt=""></li>
+                        <li>4</li>
+                        <li>5</li>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                        <li>13</li>
+                        <li>14</li>
+                        <li>15</li>
+                        <li>16</li>
+                        <li>17</li>
+                        <li>18</li>
+                        <li>19</li>
+                        <li>20</li>
+                    </ul>
+                </div>
+            </div>-->
+    <div class="forms-popup" id="myForm">
+        <div class="bgform">
+            <form action="./php/logins.php" class="form-container" method="post">
+                <h1>Login</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="btn" onclick="login()">Login</button>
+                <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart -->
+    <div class="forms-popup-cart" id="mycarts">
+        <div class="forms-container-cart">
+            <div class="row">
+                <div class="col-75">
+                    <div class="container">
+                        <form action="/action_page.php">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <h3>Billing Address</h3>
+                                    <label for="firstname"><i class="fa fa-user"></i> Full Name</label>
+                                    <input type="text" id="firstName" name="firstname" placeholder="Mr Example">
+                                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                    <input type="email" id="email" name="email" placeholder="email@example.com">
+                                    <label for="adress"><i class="fa fa-address-card-o"></i> Address</label>
+                                    <input type="text" id="adr" name="address" placeholder="7905 Avenue Querbes">
+                                    <label for="city"><i class="fa fa-institution"></i> City</label>
+                                    <input type="text" id="city" name="city" placeholder="Montreal">
+
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <label for="state">State</label>
+                                            <input type="text" id="state" name="state" placeholder="Qc">
+                                        </div>
+                                        <div class="col-50">
+                                            <label for="zip">Zip</label>
+                                            <input type="text" id="zip" name="zip" placeholder="H3N2C2">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-50">
+                                    <h3>Payment</h3>
+                                    <label for="fname">Accepted Cards</label>
+                                    <div class="icon-container">
+                                        <i class="fab fa-cc-visa" style="color:navy;"></i>
+                                        <i class="fab fa-cc-amex" style="color:blue;"></i>
+                                        <i class="fab fa-cc-mastercard" style="color:red;"></i>
+                                        <i class="fab fa-discord" style="color:orange;"></i>
+                                    </div>
+                                    <label for="cname">Name on Card</label>
+                                    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                                    <label for="ccnum">Credit card number</label>
+                                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                                    <label for="expmonth">Exp Month</label>
+                                    <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <label for="expyear">Exp Year</label>
+                                            <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                        </div>
+                                        <div class="col-50">
+                                            <label for="cvv">CVV</label>
+                                            <input type="text" id="cvv" name="cvv" placeholder="352">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <label>
+                                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same
+                                as billing
+                            </label>
+                            <input type="submit" value="Order Now" id="sub-mit" class="btn default">
+
+                        </form>
+
+                    </div>
+                </div>
+
+                <div class="col-25">
+                    <div class="container">
+                        <h4>Cart
+                            <span class="price" style="color:black">
+                                <i class="fa fa-shopping-cart"></i>
+                                <b>4</b>
+                            </span>
+                        </h4>
+                        <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+                        <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+                        <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+                        <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+                        <hr>
+                        <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+                        <input type="submit" value="Close" class="btn default" onclick="closecart()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/mains.js"></script>
+    <script src="./js/login.js"></script>
+</body>
+
+</html>

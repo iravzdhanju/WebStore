@@ -27,11 +27,3 @@ function login() {
     }
   }
 }*/
-function opencart() {
-  $('#mycarts').style.display = "block";
-  $(".overlay").style.display = "block";
-}
-function closecart() {
-  $('#mycarts').style.display = "none";
-  $(".overlay").style.display = "none";
-}
