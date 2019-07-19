@@ -1,5 +1,5 @@
 body {
-    background: #eee;
+    background: #f4f4f4;
 }
 
 .WRapper ul {
@@ -24,7 +24,17 @@ li img{
     height:150px;
   
 }
-
+.addtocart{
+    background:red;
+    color:#f4f4f4;
+    border:none;
+    outline:none;
+    margin-top: 20px;
+    border-radius: 20px;
+    width: 137px;
+    height: 30px;
+    cursor: pointer !important;
+}
 .title {
     background: red;
     color: #fff;
@@ -35,3 +45,17 @@ li img{
     display: flex;
     margin-top: 50px;
 }
+.forms-popup-cart {
+    position: absolute;
+    height:730px;
+    width:1000px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+    display: none;
+    z-index: 1;
+    background:#eee;
+  
+  
+  }

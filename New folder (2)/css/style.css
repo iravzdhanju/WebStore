@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
  body{
-   background: #f9f9f9;
+   background:#eee;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
  }
  /* Navbar container */
@@ -522,8 +522,8 @@ opacity: 1;
       /*div box*/
       .boxet{
         display: inline-block;
-         position: absolute;
-        margin-left:50px; 
+        position: absolute;
+        margin-left:100px;
       }
    /*products*/
      
@@ -638,11 +638,10 @@ padding: 20px 30px;
 .type_2 {
   border: 0;
   height: 55px;
-  margin-left:280px;
+  margin-left:140px;
   background-image: url(../image/type_2.png);
   background-repeat: no-repeat;
-  /* margin-top: 200px; */
-  position: relative;
+  margin-top: 200px;
   }
   /*Flip i*/
 
@@ -757,8 +756,3 @@ width: max-content !important
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
   }
-/*footer*/
-.container.tex-center {
-  background: none;
-  border: 0;
-}
