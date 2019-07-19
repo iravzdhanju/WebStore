@@ -1,0 +1,391 @@
+html {
+    scroll-behavior: smooth;
+  }
+   body{
+      /*ackground-image: linear-gradient(to bottom right, red, rgba(202, 28, 22, 0.931)); */
+     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
+     font-family: 'Antic';
+     font-size: 23px;
+   }
+  .overlay{
+    width:100%;
+    height:100%;
+    display:none;
+    background:rgba(0,0,0,.5);
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 1;
+  }
+   /* Navbar container */
+   .navsbar {
+      overflow: hidden;
+      background-color: #333;
+      font-family: Arial;
+      border-bottom:5px solid red;
+      position: sticky;
+    
+    }
+    
+    /* Links inside the navbar */
+    .navsbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 20px 20px;
+      text-decoration: none !important;
+    }
+    
+    /* The dropdown container */
+    .drop-down {
+      float: left;
+      overflow: hidden;
+    }
+    
+    /* Dropdown button */
+    .drop-down .dropbtn {
+      font-size: 16px;
+      border: none;
+      outline: none;
+      color: white;
+      background-color:#111;
+      padding: 20px 20px;
+      display:none;
+      background-color: inherit;
+      font-family: inherit; /* Important for vertical align on mobile phones */
+      margin: 0; /* Important for vertical align on mobile phones */
+    }
+    
+    /* Add a red background color to navbar links on hover */
+    .navsbar a:hover, .drop-down:hover .dropbtn  {
+      color: #111; background-color: red !important;
+    }
+   
+    /* Dropdown content (hidden by default) */
+    .dropdown-contents {
+      display: inline-block;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+      display:none;
+    }
+    
+    /* Links inside the dropdown */
+    .dropdown-contents a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      display:none;
+      text-align: left;
+    }
+    
+    /* Add a grey background color to dropdown links on hover */
+    .dropdown-contents a:hover {
+      background-color: #ddd;
+    }
+    
+    /* Show the dropdown menu on hover */
+    .drop-down:hover .dropdown-contents {
+      display: block;
+      position:relative;
+    }  /*logo*/
+    .loges{
+      height:30px;
+      width:100px;
+      padding:0;
+  }
+      .logo{
+          padding :0 !important;
+          margin: 11px
+      }
+      /*searchbox*/
+     .right a{
+       float: right;
+     }
+        
+   .search-container {
+         /* float: right;*/
+          color:#111;
+          color:#eee;
+          
+          
+        }
+        
+        .navsbar input[type=text] {
+          padding: 6px;
+          margin-top: 10px;
+          font-size: 17px;
+          border: none;
+          background-color:#333;
+          width:30%;
+          color:#eee;
+          border-left:#eee;
+  
+        }
+        /*right*/
+  
+        .navsbar .search-containers button {
+        /*  float: right;*/
+          padding: 6px 10px;
+          margin-top: 10px;
+          margin-right: 16px;
+          background: #333 !important;
+          font-size: 17px;
+          border: none;
+          cursor: pointer;
+        }
+        .fa-search{
+          color:#eee;
+        }
+         .search-containers button:hover {
+          background: rgb(218, 7, 7);
+          padding-top:7px
+        }
+        /*nav 2bar*/
+        /* The navigation menu */
+  .subnar {
+    overflow: hidden;
+    background-color:#eee;
+  
+  }
+  
+  /* Navigation links */
+  .subnar a {
+    float: left;
+    font-size: 16px;
+    color: #111;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+  /* The subnavigation menu */
+  .subnav {
+    float: left;
+    overflow: hidden;
+    border-bottom:5px solid #333;
+    
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 16px; 
+    border: none;
+    outline: none;
+    color: #111;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Add a red background color to navigation links on hover */
+  .subnar a:hover, .subnav:hover .subnavbtn {
+    background-color: red;
+    color:black;
+  }
+  
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #eee;
+    width: 100%;
+    z-index: 5;
+    border-bottom:5px solid #333;
+  
+  }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    float: left;
+    color: #111;
+    text-decoration: none;
+    border-top:3px solid #111;
+    padding-right:100px;
+  }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    background-color: #eee;
+    color: black;
+  }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block;
+  }
+  
+  /*footer*/
+  .footer{
+    background:#333;
+    padding:10px;
+  }
+  .footer h3{
+    color:#eee;
+  }
+  .footer a{
+    color:#eee;
+    line-height:20px;
+  }
+  .footer a:hover{
+    background-color:red;
+  }
+  .adrss{
+    color:#eee;
+  }
+  .fa-mobile-alt {
+    color:#eee;
+  }
+  .fa-fax{
+    color:#eee;
+  }
+
+  /*Contact Form*/
+  /* Style inputs with type="text", select elements and textareas */
+input[type=text],input[type=email], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 25px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  color:#333;
+  background-color:#eee;
+  resize: vertical 
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  width:50%;
+  margin:auto;
+  display:block;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: orange;
+  opacity: (0.1);
+}
+
+/* Add a background color and some padding around the form */
+.contai {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width:41%;
+  height:50%;
+  margin:auto;
+  display:block;
+  margin-top:50px;
+  box-shadow:0px 0px 10px 0px black;
+}
+
+/*Login*/
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+/*.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed; 
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+
+}*/
+
+/* The popup form - hidden by default */
+.forms-popup {
+    position: absolute;
+    height:500px;
+    width:500px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+    display: none;
+    z-index: 1;
+    transition: ease-in;
+ 
+
+}
+.contai{
+  background:#eee;
+  color:#000;
+}
+/* Add styles to the form container */
+.form-container {
+  max-width: 500px;
+  padding: 10px;
+  background-color: white;
+  width:100%;
+  background:#eee;
+  color:#333;
+  /* background-image: linear-gradient(to bottom right, black, red); */
+  box-shadow: 0px 0px 0px 3px #eee;
+  border-radius:20px;
+}
+
+/* Full-width input fields */
+.form-container input[type=text] {
+  width: 100% !important; 
+  padding: 15px !important;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+.form-container input[type=password]{
+  width: 100% !important; 
+  padding: 15px !important;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
