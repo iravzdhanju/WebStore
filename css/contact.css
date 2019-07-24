@@ -6,6 +6,7 @@ html {
      /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif */
      font-family: 'Antic';
      font-size: 23px;
+     
    }
   .overlay{
     width:100%;
@@ -24,7 +25,7 @@ html {
       font-family: Arial;
       border-bottom:5px solid red;
       position: sticky;
-    
+      height: 73px;
     }
     
     /* Links inside the navbar */
@@ -95,8 +96,8 @@ html {
       position:relative;
     }  /*logo*/
     .loges{
-      height:30px;
-      width:100px;
+      height: 50px;
+      width: 100px;
       padding:0;
   }
       .logo{
@@ -353,13 +354,16 @@ input[type=submit]:hover {
   margin: 5px 0 22px 0;
   border: none;
   background: #f1f1f1;
+  border-bottom: 4px solid red;
 }
 .form-container input[type=password]{
   width: 100% !important; 
   padding: 15px !important;
-  margin: 5px 0 22px 0;
+  margin: 5px 0 22px 0 !important;
   border: none;
   background: #f1f1f1;
+  border-radius: 25px; 
+  border-bottom: 4px solid green;
 }
 
 /* When the inputs get focus, do something */

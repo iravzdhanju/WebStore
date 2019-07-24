@@ -280,6 +280,7 @@ html {
     width:80%;
     margin-top:20px;
     height:500px;
+    overflow:scroll;
   }
   .container-cart {
     background-color: #f2f2f2;
@@ -377,6 +378,9 @@ html {
     display: none;
     z-index: 1;
     background:#eee;
+    overflow:scroll;
+   border-radius:25px; 
+   
   
   
   }
@@ -391,9 +395,51 @@ html {
     height: 30px;
     cursor: pointer !important;
 }
+.container-cart{
+  margin-right:50px;
+  margin-left:50px;
+margin-top:23px;
+  background-color:#eee;
+}
 #sub-mit{
   width:100%;
   background:red;
+  color: #eee;
 }
+.carts{
+  width:100%;
+  height:500px;
+  background:#eee;
+  /* text-align:center; */
+  
 
+}
+.carts h3{
+  color:red;
+  /* display: inline; */
+}
+.carts h4{
+  color:green;
+}
+table, th, td {
+  /* border: 1px solid black; */
+  /* border-collapse: collapse; */
+
+}
+th, td {
+  /* padding: 5px; */
+  /* text-align: center; */
+  width:500px;
+ 
+}
+.top-right{
+float:right;
+background-color:#eee;
+color:red;
+width:82px;
+height:82px;
+border-radius: 100px 50px 100px 50px;
+border:none;
+font-size:50px;
+}
 

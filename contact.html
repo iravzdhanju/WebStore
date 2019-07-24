@@ -12,28 +12,31 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script>
   <link href='https://fonts.googleapis.com/css?family=Antic' rel='stylesheet'>
-  <title>Document</title>
+  <link rel="shortcut icon" href="./image/web-icon.ico">
+  <title>Contact Us</title>
 </head>
 
 <body>
   <div class="overlay">
+
   </div>
+  <div class="cart-overlay" onclick="closecart()"></div>
   <div class="navsbar">
-    <a href="#default" class="logo"><img src="./image/R-1 - Copy1.png" class="loges"></a>
+    <a href="./index.html" class="logo"><img src="./image/R-1lo.png" class="loges"></a>
     <a href="./index.html">Home</a>
-    <a href="#news">News</a>
+    <a href="https://www.instagram.com/ravz_dhanju/">Social News</a>
     <a href="./about-us.html">About Us</a>
 
     <div class="right">
 
 
-      <a href="./carts.html"><i class="fab fa-opencart"></i> View Cart</a>
+      <!-- <a href="./carts.html"><i class="fab fa-opencart"></i> View Cart</a> -->
       <a href="#" onclick="openForm()">Login</a>
 
     </div>
 
-    <div class="drop-down">
-      <!-- <button class="dropbtn">Dropdown -->
+    <!-- <div class="drop-down"> -->
+    <!-- <button class="dropbtn">Dropdown 
       <i class="fa fa-caret-down"></i>
       </button>
       <div class="dropdown-contents">
@@ -44,7 +47,7 @@
 
 
 
-    </div>
+    </div>-->
     <div class="search-containers">
       <form>
         <input type="text" placeholder="Search.." class="searc">
@@ -55,31 +58,31 @@
   </div>
   <!-- 2nd Nav -->
   <div class="subnar">
-    <a href="#home">Phones <i class="fas fa-mobile"></i></a>
+    <a href="./phone.html">Phones <i class="fas fa-mobile"></i></a>
     <div class="subnav">
       <button class="subnavbtn">Clothing <i class="fas fa-tshirt"></i> <i class="fa fa-caret-down"></i></button>
       <div class="subnav-content">
-        <a href="#">Men</a>
-        <a href="#">Women</a>
-        <a href="#">Kids</a>
+        <a href="./clothing-men.html">Men</a>
+        <a href="./clothing-women.html">Women</a>
+        <a href="./clothing-kids.html">Kids</a>
       </div>
     </div>
     <div class="subnav">
       <button class="subnavbtn">Services <i class="fas fa-info-circle"></i> <i class="fa fa-caret-down"></i></button>
       <div class="subnav-content">
-        <a href="#bring">Bring</a>
-        <a href="#deliver">Deliver</a>
-        < <a href="#package">Package</a>
-          <a href="#express">Express</a>
+        <a href="https://www.fedex.com/en-ca/home.html">Bring</a>
+        <a href="https://www.fedex.com/en-ca/home.html">Deliver</a>
+        <a href="https://www.fedex.com/en-ca/home.html">Package</a>
+        <a href="https://www.fedex.com/en-ca/home.html">Express</a>
       </div>
     </div>
     <div class="subnav">
       <button class="subnavbtn">Partners <i class="far fa-handshake"></i> <i class="fa fa-caret-down"></i></button>
       <div class="subnav-content">
-        <a href="#link1">Link 1</a>
-        <a href="#link2">Link 2</a>
-        <a href="#link3">Link 3</a>
-        <a href="#link4">Link 4</a>
+        <a href="https://www.google.com/">Google +</a>
+        <a href="https://www.facebook.com">Facebook</a>
+        <a href="https://www.instagram.com">Instagram</a>
+        <a href="https://twitter.com/">Twitter</a>
       </div>
     </div>
     <a href="./contact.html">Contact <i class="fas fa-id-card"></i></a>
@@ -116,16 +119,16 @@
   <!-- Login -->
   <div class="forms-popup" id="myForm">
     <div class="bgform">
-      <form action="./php/logins.php" class="form-container" method="post">
+      <form class="form-container" method="post">
         <h1>Login</h1>
 
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" required>
+        <label for="email"><b>username</b></label>
+        <input type="text" placeholder="Enter Username" id="user" name="email">
 
         <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <input type="password" placeholder="Enter Password" id="pwd" name="psw">
 
-        <button type="submit" class="btn" onclick="login()">Login</button>
+        <button type="submit" class="btn" onclick="authenticate_login()">Login</button>
         <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
       </form>
     </div>

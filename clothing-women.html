@@ -5,25 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/18ad7e4eb5.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script>
+    <link href='https://fonts.googleapis.com/css?family=Antic' rel='stylesheet'>
     <link rel="stylesheet" href="./css/phone.css">
     <link rel="stylesheet" href="./css/carts.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./image/web-icon.ico">
 </head>
+<title>Women Clothing</title>
 
 <body>
     <div class="container-body-all">
         <div class="overlay"></div>
+        <div class="cart-overlay" onclick="closecart()"></div>
         <div class="navsbar">
-            <a href="#default" class="logo"><img src="./image/R-1 - Copy1.png" class="loges"></a>
+            <a href="#default" class="logo"><img src="./image/R-1lo.png" class="loges"></a>
             <a href="./index.html">Home</a>
-            <a href="#news">News</a>
+            <a href="https://www.instagram.com/ravz_dhanju/">Social News</a>
             <a href="./about-us.html">About Us</a>
 
             <div class="right">
@@ -61,27 +64,27 @@
             <div class="subnav-content">
                 <a href="./clothing-men.html">Men</a>
                 <a href="./clothing-women.html">Women</a>
-                <a href="#">Kids</a>
+                <a href="./clothing-kids.html">Kids</a>
             </div>
         </div>
         <div class="subnav">
             <button class="subnavbtn">Services <i class="fas fa-info-circle"></i> <i
                     class="fa fa-caret-down"></i></button>
             <div class="subnav-content">
-                <a href="#bring">Bring</a>
-                <a href="#deliver">Deliver</a>
-                < <a href="#package">Package</a>
-                    <a href="#express">Express</a>
+                <a href="https://www.fedex.com/en-ca/home.html">Bring</a>
+                <a href="https://www.fedex.com/en-ca/home.html">Deliver</a>
+                <a href="https://www.fedex.com/en-ca/home.html">Package</a>
+                <a href="https://www.fedex.com/en-ca/home.html">Express</a>
             </div>
         </div>
         <div class="subnav">
             <button class="subnavbtn">Partners <i class="far fa-handshake"></i> <i
                     class="fa fa-caret-down"></i></button>
             <div class="subnav-content">
-                <a href="#link1">Link 1</a>
-                <a href="#link2">Link 2</a>
-                <a href="#link3">Link 3</a>
-                <a href="#link4">Link 4</a>
+                <a href="#link1">Google +</a>
+                <a href="#link2">Facebook</a>
+                <a href="#link3">Instagram</a>
+                <a href="#link4">Twitter</a>
             </div>
         </div>
         <a href="./contact.html">Contact <i class="fas fa-id-card"></i></a>
@@ -356,23 +359,23 @@
             </div>-->
     <div class="forms-popup" id="myForm">
         <div class="bgform">
-            <form action="./php/logins.php" class="form-container" method="post">
+            <form class="form-container" method="post">
                 <h1>Login</h1>
 
-                <label for="email"><b>Email</b></label>
-                <input type="text" placeholder="Enter Email" name="email" required>
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter username" name="user">
 
-                <label for="psw"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="psw" required>
+                <label for="pwd"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="pwd">
 
-                <button type="submit" class="btn" onclick="login()">Login</button>
+                <button type="submit" class="btn" onclick="authenticate_login()">Login</button>
                 <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
         </div>
     </div>
 
     <!-- Cart -->
-    <div class="forms-popup-cart" id="mycarts">
+    <!-- <div class="forms-popup-cart" id="mycarts">
         <div class="forms-container-cart">
             <div class="row">
                 <div class="col-75">
@@ -462,6 +465,110 @@
                 </div>
             </div>
         </div>
+    </div> -->
+    <div class="forms-popup-cart" id="mycarts">
+        <div class="btnwali"><input type="button" value="&times" class="top-right" onclick="closecart()"></div>
+
+
+        <div class="forms-container-cart">
+
+            <div class="carts">
+                <h1>Cart:-</h1>
+            </div>
+        </div>
+
+        <div class="carts-info">
+            <div class="row">
+                <div class="col-75">
+                    <div class="container-cart">
+                        <form>
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <h3>Billing Address</h3>
+                                    <label for="firstname"><i class="fa fa-user"></i> Full Name</label>
+                                    <input type="text" id="firstName" name="firstname" placeholder="Mr Example">
+                                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                    <input type="email" id="email" name="email" placeholder="email@example.com">
+                                    <label for="adress"><i class="fa fa-address-card-o"></i> Address</label>
+                                    <input type="text" id="adr" name="address" placeholder="7905 Avenue Querbes">
+                                    <label for="city"><i class="fa fa-institution"></i> City</label>
+                                    <input type="text" id="city" name="city" placeholder="Montreal">
+
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <label for="state">State</label>
+                                            <input type="text" id="state" name="state" placeholder="Qc">
+                                        </div>
+                                        <div class="col-50">
+                                            <label for="zip">Zip</label>
+                                            <input type="text" id="zip" name="zip" placeholder="H3N2C2">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-50">
+                                    <h3>Payment</h3>
+                                    <label for="fname">Accepted Cards</label>
+                                    <div class="icon-container">
+                                        <i class="fab fa-cc-visa" style="color:navy;"></i>
+                                        <i class="fab fa-cc-amex" style="color:blue;"></i>
+                                        <i class="fab fa-cc-mastercard" style="color:red;"></i>
+                                        <i class="fab fa-discord" style="color:orange;"></i>
+                                    </div>
+                                    <label for="cname">Name on Card</label>
+                                    <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                                    <label for="ccnum">Credit card number</label>
+                                    <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                                    <label for="expmonth">Exp Month</label>
+                                    <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+                                    <div class="row">
+                                        <div class="col-50">
+                                            <label for="expyear">Exp Year</label>
+                                            <input type="text" id="expyear" name="expyear" placeholder="2018">
+                                        </div>
+                                        <div class="col-50">
+                                            <label for="cvv">CVV</label>
+                                            <input type="text" id="cvv" name="cvv" placeholder="352">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <label>
+                                <input type="checkbox" checked="checked" name="sameadr"> Shipping address same
+                                as billing
+                            </label>
+                            <input type="submit" value="Order Now" id="sub-mit" class="btn default">
+                            <input type="button" value="Close" class="btn default" onclick="closecart()">
+                        </form>
+
+                    </div>
+                </div>
+
+
+
+
+                <!--== <div class="col-25">
+                <div class="container">
+                    <h4>Cart
+                        <span class="price" style="color:black">
+                            <i class="fa fa-shopping-cart"></i>
+                            <b>4</b>
+                        </span>
+                    </h4>
+                    <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+                    <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+                    <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+                    <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+                    <hr>
+                    <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+                   
+                </div>
+            </div> -->
+            </div>
+        </div>
     </div>
     <!-- Footer -->
     <section class="footer">
@@ -540,6 +647,7 @@
     </section>
     <script src="./js/mains.js"></script>
     <script src="./js/login.js"></script>
+    <script src="js/checkout.js"></script>
 </body>
 
 </html>

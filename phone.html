@@ -5,25 +5,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/18ad7e4eb5.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Antic' rel='stylesheet'>
+    <link rel="shortcut icon" href="./image/web-icon.ico" />
     <link rel="stylesheet" href="./css/phone.css">
     <link rel="stylesheet" href="./css/carts.css">
     <link rel="stylesheet" href="./css/style.css">
+    <title>Phones</title>
 </head>
 
 <body>
     <div class="container-body-all">
         <div class="overlay"></div>
+        <div class="cart-overlay" onclick="closecart()"></div>
         <div class="navsbar">
-            <a href="#default" class="logo"><img src="./image/R-1 - Copy1.png" class="loges"></a>
+            <a href="#default" class="logo"><img src="./image/R-1lo.png" class="loges"></a>
             <a href="./index.html">Home</a>
-            <a href="#news">News</a>
+            <a href="https://www.instagram.com/ravz_dhanju/">Social News</a>
             <a href="./about-us.html">About Us</a>
 
             <div class="right">
@@ -61,31 +65,32 @@
             <div class="subnav-content">
                 <a href="./clothing-men.html">Men</a>
                 <a href="./clothing-women.html">Women</a>
-                <a href="#">Kids</a>
+                <a href="./clothing-kids.html">Kids</a>
             </div>
         </div>
         <div class="subnav">
             <button class="subnavbtn">Services <i class="fas fa-info-circle"></i> <i
                     class="fa fa-caret-down"></i></button>
             <div class="subnav-content">
-                <a href="#bring">Bring</a>
-                <a href="#deliver">Deliver</a>
-                <a href="#package">Package</a>
-                <a href="#express">Express</a>
+                <a href="https://www.fedex.com/en-ca/home.html">Bring</a>
+                <a href="https://www.fedex.com/en-ca/home.html">Deliver</a>
+                <a href="https://www.fedex.com/en-ca/home.html">Package</a>
+                <a href="https://www.fedex.com/en-ca/home.html">Express</a>
             </div>
         </div>
         <div class="subnav">
-            <button class="subnavbtn">Partners <i class="far fa-handshake"></i> <i
+            <button class="subnavbtn">Social Network Partners <i class="far fa-handshake"></i> <i
                     class="fa fa-caret-down"></i></button>
             <div class="subnav-content">
-                <a href="#link1">Link 1</a>
-                <a href="#link2">Link 2</a>
-                <a href="#link3">Link 3</a>
-                <a href="#link4">Link 4</a>
+                <a href="#link1">Google +</a>
+                <a href="#link2">Facebook</a>
+                <a href="#link3">Instagram</a>
+                <a href="#link4">Twitter</a>
             </div>
         </div>
         <a href="./contact.html">Contact <i class="fas fa-id-card"></i></a>
     </div>
+
 
     <!-- Products -->
     <section class="featured-deals">
@@ -354,7 +359,7 @@
                     </ul>
                 </div>
             </div>-->
-    <div class="forms-popup" id="myForm">
+    <!-- <div class="forms-popup" id="myForm">
         <div class="bgform">
             <form action="./php/logins.php" class="form-container" method="post">
                 <h1>Login</h1>
@@ -369,15 +374,43 @@
                 <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
             </form>
         </div>
+    </div> -->
+    <!-- LOGIN -->
+    <div class="forms-popup" id="myForm">
+        <div class="bgform">
+            <form class="form-container" method="post">
+                <h1>Login</h1>
+
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" id="user" name="usern">
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" id="pwd" name="psw">
+
+                <button type="submit" class="btn" onclick="authenticate_login()">Login</button>
+                <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
     </div>
 
     <!-- Cart -->
+
     <div class="forms-popup-cart" id="mycarts">
+        <div class="btnwali"><input type="button" value="&times" class="top-right" onclick="closecart()"></div>
+
+
         <div class="forms-container-cart">
+
+            <div class="carts">
+                <h1>Cart:-</h1>
+            </div>
+        </div>
+
+        <div class="carts-info">
             <div class="row">
                 <div class="col-75">
-                    <div class="container">
-                        <form action="/action_page.php">
+                    <div class="container-cart">
+                        <form>
 
                             <div class="row">
                                 <div class="col-50">
@@ -437,35 +470,130 @@
                                 as billing
                             </label>
                             <input type="submit" value="Order Now" id="sub-mit" class="btn default">
-
+                            <input type="button" value="Close" class="btn default" onclick="closecart()">
                         </form>
 
                     </div>
                 </div>
 
-                <div class="col-25">
-                    <div class="container">
-                        <h4>Cart
-                            <span class="price" style="color:black">
-                                <i class="fa fa-shopping-cart"></i>
-                                <b>4</b>
-                            </span>
-                        </h4>
-                        <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-                        <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-                        <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-                        <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-                        <hr>
-                        <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
-                        <input type="submit" value="Close" class="btn default" onclick="closecart()">
-                    </div>
-                </div>
+
+
+
+                <!--== <div class="col-25">
+            <div class="container">
+                <h4>Cart
+                    <span class="price" style="color:black">
+                        <i class="fa fa-shopping-cart"></i>
+                        <b>4</b>
+                    </span>
+                </h4>
+                <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+                <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+                <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+                <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+                <hr>
+                <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+               
+            </div>
+        </div> -->
             </div>
         </div>
     </div>
 
-    <script src="./js/mains.js"></script>
-    <script src="./js/login.js"></script>
+    <!-- Footer -->
+    <section class="footer">
+        <div class="container tex-center">
+            <div class="row">
+                <div class="col-md-3">
+                    <h3> <u>Useful links</u> </h3>
+                    <a href="#">
+                        <p>Categories</p>
+                    </a>
+                    <a href="#">
+                        <p>Recenty Added</p>
+                    </a>
+                    <a href="#">
+                        <p>Men</p>
+                    </a>
+                    <a href="#">
+                        <p>Women</p>
+                    </a>
+                    <a href="#">
+                        <p>Kids</p>
+                    </a>
+
+                </div>
+                <div class="col-md-3">
+                    <h3><u>Queries</u> </h3>
+                    <a href="#">
+                        <p>Register With us</p>
+                    </a>
+                    <a href="#">
+                        <p>Register in Quality</p>
+                    </a>
+                    <a href="#">
+                        <p>About Brands</p>
+                    </a>
+                    <a href="#">
+                        <p>Invest in us</p>
+                    </a>
+                    <a href="#">
+                        <p>Share our products</p>
+                    </a>
+
+                </div>
+                <div class="col-md-3">
+                    <h3> <u>Merchandise</u> </h3>
+                    <a href="#">
+                        <p>Privacy Policy</p>
+                    </a>
+                    <a href="#">
+                        <p>About Us</p>
+                    </a>
+                    <a href="#">
+                        <p>Contact Form</p>
+                    </a>
+                    <a href="#">
+                        <p>New Brandings</p>
+                    </a>
+                    <a href="#">
+                        <p>Partners</p>
+                    </a>
+                </div>
+
+                <div class="col-md-3">
+                    <h3> <u>Our Address</u> </h3>
+                    <p class="adrss"> 2100 Avenue Querbes <br>
+                        Parc Extenstion <br>
+                        Suite - 203 <br>
+                        <i class="fas fa-mobile-alt"></i> Mob- +1(438)22-33-777 <br>
+                        <i class="fas fa-fax"></i> Fax- 2233522335 <br>
+                        <i class="fas fa-at"></i> Email- ravzdhanju@gmail.com
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- <table>
+            <tr>
+                <th>Names</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </table> -->
+        <!-- <h1> 
+                ${name} </h1>
+   
+               <h2> 
+                ${price} </h2> -->
+
+        <script src="./js/mains.js"></script>
+        <script src="./js/login.js"></script>
+        <script src="js/checkout.js"></script>
 </body>
 
 </html>

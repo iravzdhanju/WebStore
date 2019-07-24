@@ -5,40 +5,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/about-us.css">
+    <script src="https://kit.fontawesome.com/18ad7e4eb5.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"> </script>
+    <link href='https://fonts.googleapis.com/css?family=Antic' rel='stylesheet'>
+    <link rel="shortcut icon" href="./image/web-icon.ico">
+    <title>About Us</title>
 </head>
 
 <body>
     <div class="overlay"></div>
     <div class="navsbar">
-        <a href="#default" class="logo"><img src="./image/R-1 - Copy1.png" class="loges"></a>
+        <a href="#default" class="logo"><img src="./image/R-1lo.png" class="loges"></a>
         <a href="./index.html">Home</a>
-        <a href="#news">News</a>
-        <a href="#home">About Us</a>
+        <a href="https://www.instagram.com/ravz_dhanju/">Social News</a>
+        <a href="./about-us.html">About Us</a>
 
         <div class="right">
 
 
             <a href="./carts.html"><i class="fab fa-opencart"></i> View Cart</a>
             <a href="#" onclick="openForm()">Login</a>
-        </div>
-
-        <div class="drop-down">
-            <button class="dropbtn">Dropdown
-                <i class="fa fa-caret-down"></i>
-            </button>
-
 
         </div>
+
+        <!-- <div class="drop-down"> -->
+        <!-- <button class="dropbtn">Dropdown 
+          <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-contents">
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Electronics</a>
+          </div>
+    
+    
+    
+        </div>-->
         <div class="search-containers">
             <form>
                 <input type="text" placeholder="Search.." class="searc">
-                <button type="button" class="searchBtn" onclick="search()"> <i class="fa fa-search"></i></button>
+                <button type="button" class="dropbtn" onclick="search()"> <i class="fa fa-search"></i></button>
 
             </form>
         </div>
     </div>
+    <!-- 2nd Nav -->
+    <div class="subnar">
+        <a href="#home">Phones <i class="fas fa-mobile"></i></a>
+        <div class="subnav">
+            <button class="subnavbtn">Clothing <i class="fas fa-tshirt"></i> <i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="./clothing-men.html">Men</a>
+                <a href="./clothing-women.html">Women</a>
+                <a href="./clothing-kids.html">Kids</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Services <i class="fas fa-info-circle"></i> <i
+                    class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="https://www.fedex.com/en-ca/home.html">Bring</a>
+                <a href="https://www.fedex.com/en-ca/home.html">Deliver</a>
+                <a href="https://www.fedex.com/en-ca/home.html">Package</a>
+                <a href="https://www.fedex.com/en-ca/home.html">Express</a>
+            </div>
+        </div>
+        <div class="subnav">
+            <button class="subnavbtn">Social Network Partners <i class="far fa-handshake"></i> <i
+                    class="fa fa-caret-down"></i></button>
+            <div class="subnav-content">
+                <a href="#link1">Google +</a>
+                <a href="#link2">Facebook</a>
+                <a href="#link3">Instagram</a>
+                <a href="#link4">Twitter</a>
+            </div>
+        </div>
+        <a href="./contact.html">Contact <i class="fas fa-id-card"></i></a>
+    </div>
+
 
     <!-- About US -->
     <!-- SlideShow -->
@@ -48,25 +97,25 @@
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
-            <img src="./image/R-1 - Copy1.png" style="width:100%">
+            <img src="./image/R-1lo.png">
             <div class="text">Caption Text</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
-            <img src="./image/R-1 - Copy1.png" style="width:100%">
+            <img src="./image/R-1lo.png">
             <div class="text">Caption Two</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
-            <img src="./image/caro3.jpg" style="width:100%">
+            <img src="./image/caro3.jpg">
             <div class="text">Caption Three</div>
         </div>
 
         <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1)"> &#10094;</a>
+        <a class="next" onclick="plusSlides(1)"> &#10095;</a>
     </div>
     <br>
 
@@ -76,7 +125,24 @@
         <span class="dot" onclick="currentSlide(2)"></span>
         <span class="dot" onclick="currentSlide(3)"></span>
     </div>
+    <!--  <div class="forms-popup" id="myForm">
+            <div class="bgform">
+              <form class="form-container" method="post">
+                <h1>Login</h1>
+      
+                <label for="username"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" id="user" name="usern">
+      
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" id="pwd" name="psw">
+      
+                <button type="submit" class="btn" onclick="authenticate_login()">Login</button>
+                <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+              </form>
+            </div> 
+          </div> -->
     <script src="./js/slide-show.js"></script>
+
 </body>
 
 </html>
