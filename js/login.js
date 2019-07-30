@@ -37,18 +37,18 @@ function closecart() {
 }
 
 
-function authenticate_login() {
-  var v1, v2;
-  v1 = document.getElementById("user").Value;
-  v2 = document.getElementById("pwd").Value;
-  if (v1 == "admin" && v2 == "12345") {
-    alert('Welcome to the website');
-    parent.location.href = "./index.html";
-  }
-  else {
-    document.getElementById("user").value = "";
-    document.getElementById("pwd").value = "";
-    document.getElementById("user").focus();
+// function authenticate_login() {
+//   var v1, v2;
+//   v1 = document.getElementById("user").Value;
+//   v2 = document.getElementById("pwd").Value;
+//   if (v1 == "admin" && v2 == "12345") {
+//     alert('Welcome to the website');
+//     parent.location.href = "./index.html";
+//   }
+//   else {
+//     document.getElementById("user").value = "";
+//     document.getElementById("pwd").value = "";
+//     document.getElementById("user").focus();
 
-  }
-}
+//   }
+// }

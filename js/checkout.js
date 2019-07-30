@@ -116,21 +116,29 @@ buttons.forEach((btn) => {
          
         <hr>
     
-        <table>
+        <table class="carts-table">
            
             <tr>
                 <td width="1000px"><h3>${name}</h3> </td>
                 <td width="1000px"><h4>${price}</h4></td>
-                <td width="1000px"><input type="button" class="btn-delete" value="Delete"></td>
+                <td width="1000px"><input type="button" class="btn-delete" value="Delete" onclick="clear()"></td>
                 </tr>
         </table>
    
           
         </div>
+        
     `;
+
+
 
         console.log(item);
 
         cart.innerHTML += item;
+        alert("Added To Cart");
     }
 })
+
+
+
+

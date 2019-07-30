@@ -406,6 +406,12 @@ margin-top:23px;
   background:red;
   color: #eee;
 }
+#btn-cart-is{
+  width:100%;
+  background:red;
+  color: #eee;
+}
+
 .carts{
   width:100%;
   height:500px;

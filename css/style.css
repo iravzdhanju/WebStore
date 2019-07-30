@@ -196,6 +196,22 @@ html {
   background-color: rgba(0,0,0,0.8);
 }
 
+
+/*scrollbar
+::-webkit-scrollbar {
+  width: 5px;          
+}
+
+::-webkit-scrollbar-thumb {   
+ border-radius: 30px;
+ background: -webkit-gradient(linear,left top,left bottom,from(#eee),to(#eee(240, 11, 11)));
+ box-shadow: inset 2px 2px 2px rgba(255,255,255,.25), inset -2px -2px 2px rgba(0,0,0,.25);}
+
+::-webkit-scrollbar-track {     
+ background-color: #fff;
+ /* background: linear-gradient(to right,#201c29,#201c29 1px,#100e17 1px,#100e17); 
+}*/
+
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -330,6 +346,7 @@ html {
 .side-nav{
   display: inline;
   
+  
 }
 .side-nav ul{
     list-style-type: none;
@@ -337,19 +354,19 @@ html {
     padding: 0;
     width: 14%;
     background-color: #f1f1f1;
-    height:auto; /* Full height */
+    height:1400px; /* Full height */
     display:inline-block;
     /* Make it stick, even on scroll */
     line-height:30px;
-    overflow:auto; /* Enable scrolling if the sidenav has too much content */
-    
+    /* overflow:auto; Enable scrolling if the sidenav has too much content */
+    overflow:scroll;
 }
 .side-nav li{
 
   width:100%;
+padding-left:10px;
 
-
-  text-align:center;
+  /* text-align:center; */
 
 }
 #side-nav-h3{
@@ -362,6 +379,7 @@ html {
 }
 .side-nav a{
   text-decoration:none;
+  list-style: none;
   color:#111;
 
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -540,7 +558,7 @@ opacity: 1;
       .boxet{
         display: inline-block;
          position: absolute;
-        margin-left:50px; 
+        margin-left:100px;
       }
    /*products*/
      
@@ -655,7 +673,7 @@ padding: 20px 30px;
 .type_2 {
   border: 0;
   height: 55px;
-  margin-left:280px;
+  /* margin-left:280px; */
   background-image: url(../image/type_2.png);
   background-repeat: no-repeat;
   /* margin-top: 200px; */
@@ -666,8 +684,8 @@ padding: 20px 30px;
   /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
   background-color: transparent;
-  width: 200px;
-  height: 30px;
+  width: 280px;
+  height: 50px;
   border: 1px solid #f1f1f1;
   perspective: 500px; /* Remove this if you don't want the 3D effect */
   margin-right:auto;
@@ -685,6 +703,10 @@ padding: 20px 30px;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+}
+.flip-card p{
+margin-top:10px;
+font-size:20px;
 }
 .flips {
     width:100px;
