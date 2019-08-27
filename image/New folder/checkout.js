@@ -114,16 +114,14 @@ buttons.forEach((btn) => {
         <div class="item">
         
          
-        
+        <hr>
     
         <table class="carts-table">
            
             <tr>
-                <td width="1000px"><h3>${name}</h3> </td><hr>
+                <td width="1000px"><h3>${name}</h3> </td>
                 <td width="1000px"><h4>${price}</h4></td>
-                <td width="1000px"><input type="button" class="delete-cart-value" value="Delete"></td>
-                
-            
+                <td width="1000px"><input type="button" class="btn-delete" value="Delete" onclick="clear()"></td>
                 </tr>
         </table>
    
@@ -134,25 +132,13 @@ buttons.forEach((btn) => {
 
 
 
-        // console.log(item);
+        console.log(item);
 
         cart.innerHTML += item;
         alert("Added To Cart");
-        let rmbtns = document.querySelectorAll('.delete-cart-value');
-        rmbtns.forEach(btn => {
-            btn.onclick = () => {
-
-                console.log(btn);
-                btn.parentElement.parentElement.remove();
-            }
-
-        })
     }
 })
 
 
-// console.log('hi');
 
-
-// console.log(rmbtns);
 
