@@ -34,7 +34,7 @@ html {
   }
   
   /* Dropdown button */
-  .drop-down .dropbtn .{
+  .drop-down .dropbtn {
     font-size: 16px;
     border: none;
     outline: none;
